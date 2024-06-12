@@ -42,34 +42,87 @@ This project is a RESTful Blog API developed using Java Spring Boot, leveraging 
 - **Spring Boot Starter Mail**: Email support.
 - **Spring Boot Starter Test**: Testing support.
 
-## Endpoints
-### User Endpoints:
-- `[POST /users](http://localhost:8080/api/users/)`: Create a new user.
-- `[GET /users](http://localhost:8080/api/users/)`: Retrieve all users.
-- `[GET /users/{id}](http://localhost:8080/api/users/2)`: Retrieve a user by ID.
-- `[PUT /users/{id}](http://localhost:8080/api/users/1)`: Update a user by ID.
-- `[DELETE /users/{id}](http://localhost:8080/api/users/2)`: Delete a user by ID.
+## EndpointsUsers
+Add User
 
-### Blog Post Endpoints:
-- `[POST /posts](http://localhost:8080/api/posts/user/205/category/5/posts)`: Create a new blog post.
-- `GET /posts`: Retrieve all blog posts with pagination support.
-- `[GET /posts/{id}]http://localhost:8080/api/posts/category/1/posts`: Get Post by categories
-- `(http://localhost:8080/api/posts/user/1/posts)`: Retrieve a blog post by user.
-- `PUT /posts/{id}`: Update a blog post by ID.
-- `DELETE /posts/{id}`: Delete a blog post by ID.
-- `POST /posts/{postId}/images`: Upload an image for a blog post.
+Method: POST
+URL: http://localhost:8080/api/users/
+Get Users
 
-### Category Endpoints:
-- `[POST /categories](http://localhost:8080/api/categories/)`: Create a new category.
-- `[GET /categories](http://localhost:8080/api/categories/)`: Retrieve all categories.
-- `[GET /categories/{id}](http://localhost:8080/api/categories/)`: Retrieve a category by ID.
-- `PUT /categories/{id}`: Update a category by ID.
-- `DELETE /categories/{id}`: Delete a category by ID.
+Method: GET
+URL: http://localhost:8080/api/users/
+Get Single User
 
-### Comment Endpoints:
-- `POST /posts/{postId}/comments`: Add a comment to a blog post.
-- `GET /posts/{postId}/comments`: Retrieve all comments for a blog post with pagination support.
-- `DELETE /comments/{id}`: Delete a comment by ID.
+Method: GET
+URL: http://localhost:8080/api/users/5
+Update User
+
+Method: PUT
+URL: http://localhost:8080/api/users/1
+Delete User
+
+Method: DELETE
+URL: http://localhost:8080/api/users/2
+Categories
+Add Category
+
+Method: POST
+URL: http://localhost:8080/api/categories/
+Get Categories
+
+Method: GET
+URL: http://localhost:8080/api/categories/
+Posts
+Create Post
+
+Method: POST
+URL: http://localhost:8080/api/posts/user/205/category/5/posts
+Get Posts By User
+
+Method: GET
+URL: http://localhost:8080/api/posts/user/1/posts
+Get Posts By Category
+
+Method: GET
+URL: http://localhost:8080/api/posts/category/1/posts
+Get All Posts
+
+Method: GET
+URL: http://localhost:8080/api/posts
+Update Post
+
+Method: PUT
+URL: http://localhost:8080/api/posts/posts/4
+Pagination Check
+
+Method: GET
+URL: http://localhost:8080/api/posts/posts?pageNumber=0&pageSize=3
+Sorting
+
+Method: GET
+URL: http://localhost:8080/api/posts/posts?pageNumber=0&pageSize=3&sortBy=postId&sortDir=desc
+Search Post
+
+Method: GET
+URL: http://localhost:8080/api/posts/posts/search/recession
+Images
+Send Image
+
+Method: POST
+URL: http://localhost:8080/api/post/image/upload/1
+Get Image
+
+Method: GET
+URL: http://localhost:8080/api/post/image/Ashutosh_logo1.png
+Comments
+Add Comment (Post 4)
+
+Method: POST
+URL: http://localhost:8080/api/posts/4/comments
+Add Comment (Post 2)
+
+Method: POST
+URL: http://localhost:8080/api/posts/2/comments
 
 ## Configuration
 **application.properties**:
