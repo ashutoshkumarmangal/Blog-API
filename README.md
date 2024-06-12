@@ -45,83 +45,83 @@ This project is a RESTful Blog API developed using Java Spring Boot, leveraging 
 ## EndpointsUsers
 Add User
 
-Method: POST
+- Method: POST
 URL: http://localhost:8080/api/users/
 Get Users
 
-Method: GET
+- Method: GET
 URL: http://localhost:8080/api/users/
 Get Single User
 
-Method: GET
+- Method: GET
 URL: http://localhost:8080/api/users/5
 Update User
 
-Method: PUT
+- Method: PUT
 URL: http://localhost:8080/api/users/1
 Delete User
 
-Method: DELETE
+- Method: DELETE
 URL: http://localhost:8080/api/users/2
 Categories
 Add Category
 
-Method: POST
+- Method: POST
 URL: http://localhost:8080/api/categories/
 Get Categories
 
-Method: GET
+- Method: GET
 URL: http://localhost:8080/api/categories/
 Posts
 Create Post
 
-Method: POST
+- Method: POST
 URL: http://localhost:8080/api/posts/user/205/category/5/posts
 Get Posts By User
 
-Method: GET
+- Method: GET
 URL: http://localhost:8080/api/posts/user/1/posts
 Get Posts By Category
 
-Method: GET
+- Method: GET
 URL: http://localhost:8080/api/posts/category/1/posts
 Get All Posts
 
-Method: GET
+- Method: GET
 URL: http://localhost:8080/api/posts
 Update Post
 
-Method: PUT
+- Method: PUT
 URL: http://localhost:8080/api/posts/posts/4
 Pagination Check
 
-Method: GET
+- Method: GET
 URL: http://localhost:8080/api/posts/posts?pageNumber=0&pageSize=3
 Sorting
 
-Method: GET
+- Method: GET
 URL: http://localhost:8080/api/posts/posts?pageNumber=0&pageSize=3&sortBy=postId&sortDir=desc
 Search Post
 
-Method: GET
+- Method: GET
 URL: http://localhost:8080/api/posts/posts/search/recession
 Images
 Send Image
 
-Method: POST
+- Method: POST
 URL: http://localhost:8080/api/post/image/upload/1
 Get Image
 
-Method: GET
+- Method: GET
 URL: http://localhost:8080/api/post/image/Ashutosh_logo1.png
 Comments
 Add Comment (Post 4)
 
-Method: POST
+- Method: POST
 URL: http://localhost:8080/api/posts/4/comments
 Add Comment (Post 2)
 
-Method: POST
+- Method: POST
 URL: http://localhost:8080/api/posts/2/comments
 
 ## Configuration
