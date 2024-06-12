@@ -125,18 +125,15 @@ URL: http://localhost:8080/api/posts/2/comments
 
 ## Configuration
 **application.properties**:
-# Database Configuration
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/blogdb
 spring.datasource.username=root
 spring.datasource.password=password
-
-# JPA Configuration
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-
-# File Upload Configuration
 spring.servlet.multipart.max-file-size=2MB
 spring.servlet.multipart.max-request-size=2MB
+```
 
 
 # Project Author
