@@ -45,23 +45,24 @@ This project is a RESTful Blog API developed using Java Spring Boot, leveraging 
 ## Endpoints
 ### User Endpoints:
 - `[POST /users](http://localhost:8080/api/users/)`: Create a new user.
-- `GET /users`: Retrieve all users.
-- `GET /users/{id}`: Retrieve a user by ID.
-- `PUT /users/{id}`: Update a user by ID.
-- `DELETE /users/{id}`: Delete a user by ID.
+- `[GET /users](http://localhost:8080/api/users/)`: Retrieve all users.
+- `[GET /users/{id}](http://localhost:8080/api/users/2)`: Retrieve a user by ID.
+- `[PUT /users/{id}](http://localhost:8080/api/users/1)`: Update a user by ID.
+- `[DELETE /users/{id}](http://localhost:8080/api/users/2)`: Delete a user by ID.
 
 ### Blog Post Endpoints:
-- `POST /posts`: Create a new blog post.
+- `[POST /posts](http://localhost:8080/api/posts/user/205/category/5/posts)`: Create a new blog post.
 - `GET /posts`: Retrieve all blog posts with pagination support.
-- `GET /posts/{id}`: Retrieve a blog post by ID.
+- `[GET /posts/{id}]http://localhost:8080/api/posts/category/1/posts`: Get Post by categories
+- `(http://localhost:8080/api/posts/user/1/posts)`: Retrieve a blog post by user.
 - `PUT /posts/{id}`: Update a blog post by ID.
 - `DELETE /posts/{id}`: Delete a blog post by ID.
 - `POST /posts/{postId}/images`: Upload an image for a blog post.
 
 ### Category Endpoints:
-- `POST /categories`: Create a new category.
-- `GET /categories`: Retrieve all categories.
-- `GET /categories/{id}`: Retrieve a category by ID.
+- `[POST /categories](http://localhost:8080/api/categories/)`: Create a new category.
+- `[GET /categories](http://localhost:8080/api/categories/)`: Retrieve all categories.
+- `[GET /categories/{id}](http://localhost:8080/api/categories/)`: Retrieve a category by ID.
 - `PUT /categories/{id}`: Update a category by ID.
 - `DELETE /categories/{id}`: Delete a category by ID.
 
