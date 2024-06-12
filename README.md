@@ -42,8 +42,7 @@ This project is a RESTful Blog API developed using Java Spring Boot, leveraging 
 - **Spring Boot Starter Mail**: Email support.
 - **Spring Boot Starter Test**: Testing support.
 
-## EndpointsUsers
-Add User
+## Endpoints
 
 - Method: POST
 URL: http://localhost:8080/api/users/
@@ -134,3 +133,6 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.servlet.multipart.max-file-size=2MB
 spring.servlet.multipart.max-request-size=2MB
+
+##Project Author
+Ashutosh Kumar Mangal
